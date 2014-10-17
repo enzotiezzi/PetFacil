@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+     >
+
+    <ImageButton
+        android:id="@+id/imgprox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="117dp"
+        android:background="@null"
+        android:onClick="buscaProduto"
+        android:src="@drawable/btn_buscar" />
+
+    <EditText
+        android:id="@+id/etBusca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imgprox"
+        android:layout_below="@+id/tvNomeLoja"
+        android:layout_marginTop="92dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvNomeLoja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:text="Digite o nome do produto ou do serviço a ser pesquisado"
+        android:gravity="center" 
+        android:textSize="20dp"
+        android:textColor="#005500"
+        android:textStyle="bold"
+        android:typeface="sans"/>
+
+</RelativeLayout>

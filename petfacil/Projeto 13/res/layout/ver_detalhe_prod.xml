@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="horizontal" 
+    android:background="@drawable/fundo">
+
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="fill_vertical"
+        android:layout_row="7" />
+
+    <TextView
+        android:id="@+id/tvNomeProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp"
+        android:text="TextView"
+        android:textColor="#005500"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="sans" 
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvCategoriaProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNomeProd"
+        android:layout_below="@+id/tvNomeProd"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        android:textColor="#005500"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="sans" 
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPrecoProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCategoriaProd"
+        android:layout_below="@+id/tvCategoriaProd"
+        android:layout_marginTop="58dp"
+        android:text="TextView"
+        android:textColor="#005500"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvlistaServ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00dd00"
+        android:text="Produtos"
+        android:textColor="#006600"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/tvNomeLojaView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#00dd00"
+        android:text="TextView"
+        android:textColor="#006600"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:gravity="center" />
+
+</RelativeLayout>

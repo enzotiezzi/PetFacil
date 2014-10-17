@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/back"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/back"/>
+    
+     <item
+        android:id="@+id/produtos"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="Produtos"/>
+    <item
+        android:id="@+id/servicos"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="Serviços"/>
+    
+    
+
+</menu>

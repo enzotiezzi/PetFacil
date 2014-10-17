@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/fundo">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvCategoriaProd" />
+
+    <TextView
+        android:id="@+id/tvRuanum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvNomeProd"
+        android:layout_alignBottom="@+id/tvNomeProd"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" 
+        android:typeface="sans"/>
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvCategoriaProd"
+        android:layout_alignLeft="@+id/tvRuanum"
+        android:text="TextView" 
+        android:typeface="sans"/>
+
+    <TextView
+        android:id="@+id/tvCategoriaProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNomeProd"
+        android:layout_below="@+id/tvNomeProd"
+        android:layout_marginTop="20dp"
+        android:text="Nome"
+        android:textColor="#005500"
+        android:typeface="sans"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvNomeProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/tvRuanum"
+        android:text="Rua - Número"
+        android:textColor="#005500"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/tvlistaServ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvNomeProd"
+        android:text="Endereço"
+        android:textColor="#005500"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
